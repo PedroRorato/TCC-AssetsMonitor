@@ -1,17 +1,24 @@
-import { Button } from "@/components/ui"
+import { Link } from "react-router-dom";
+// Styles
+import "./HomePage.styles.scss";
+import logo from "@/assets/logo.png";
 
 const HomePage = () => {
   const handleClick = () => {
-    console.log('clicked');
-  }
+    console.log("clicked");
+  };
 
   return (
-    <div>
-      <h1>HomePage</h1>
+    <div className="home-container">
+      <div className="home-logo">
+        <img src={logo} className="img-fluid" alt="logo" />
+      </div>
 
-      <Button onClick={handleClick}>Teste</Button>
+      <Link to="/dashboard" className="home-button">
+        Go to Dashboard
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
