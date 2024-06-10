@@ -1,0 +1,10 @@
+.interest-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 1rem;
+}
+
+.add-btn {
+  height: fit-content;
+  margin-top: auto;
+}
